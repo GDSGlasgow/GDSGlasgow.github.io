@@ -7,16 +7,7 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- Load DecapBridge media plugin first -->
-    <script src="https://unpkg.com/decap-cms-media-library-decap-bridge@latest/dist/decap-cms-media-library-decap-bridge.js"></script>
-    <script>
-      // Register the Bridge media plugin before CMS auto-init
-      if (window.DecapBridgeMediaLibrary) {
-        CMS.registerMediaLibrary(DecapBridgeMediaLibrary());
-      }
-    </script>
-
-    <!-- Then load Decap CMS (auto-init) -->
+    <!-- Core Decap CMS auto-init script -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>

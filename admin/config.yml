@@ -1,5 +1,3 @@
-# ── admin/config.yml ──
-
 backend:
   name: git-gateway
   repo: GDSGlasgow/GDSGlasgow.github.io
@@ -10,22 +8,20 @@ backend:
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 site_url: https://gdsglasgow.github.io
 
-# Expose entire assets folder so you can browse audio, images, etc.
+# Expose all assets for browsing
 media_folder: "assets"
 public_folder: "/assets"
 media_library:
   name: "decap-bridge"
 
 collections:
-
-  # POSTS
   - name: "posts"
     label: "Blog Posts"
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout",        name: "layout",        widget: "hidden",  default: "post" }
+      - { label: "Layout",        name: "layout",        widget: "hidden", default: "post" }
       - { label: "Title",         name: "title",         widget: "string" }
       - { label: "Date",          name: "date",          widget: "datetime" }
       - { label: "Author",        name: "author",        widget: "string" }
@@ -35,23 +31,21 @@ collections:
       - { label: "Thumbnail URL", name: "thumbnail",     widget: "string",  required: false }
       - { label: "Body",          name: "body",          widget: "markdown" }
 
-  # PROJECTS
   - name: "projects"
     label: "Projects"
     folder: "_projects"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Layout",               name: "layout",              widget: "hidden", default: "page" }
-      - { label: "Title",                name: "title",               widget: "string" }
-      - { label: "Description",          name: "description",         widget: "text",    required: false }
-      - { label: "Image Path",           name: "img",                 widget: "file" }
-      - { label: "Importance (1-5)",     name: "importance",          widget: "number",  min: 1, max: 5 }
-      - { label: "Category",             name: "category",            widget: "string" }
+      - { label: "Layout",               name: "layout",            widget: "hidden", default: "page" }
+      - { label: "Title",                name: "title",             widget: "string" }
+      - { label: "Description",          name: "description",       widget: "text",    required: false }
+      - { label: "Image Path",           name: "img",               widget: "file" }
+      - { label: "Importance",           name: "importance",        widget: "number",  min: 1, max: 5 }
+      - { label: "Category",             name: "category",          widget: "string" }
       - { label: "Related Publications", name: "related_publications", widget: "string", required: false }
-      - { label: "Body",                 name: "body",                widget: "markdown" }
+      - { label: "Body",                 name: "body",              widget: "markdown" }
 
-  # TEAM MEMBERS
   - name: "team"
     label: "Team Members"
     folder: "_team"
@@ -75,7 +69,7 @@ collections:
           - { label: "Name",     name: "name",     widget: "string" }
           - { label: "Position", name: "position", widget: "string" }
           - { label: "Align",    name: "align",    widget: "select", options: ["left","right"] }
-          - { label: "Image File", name: "image",  widget: "file" }
+          - { label: "Image File", name: "image", widget: "file" }
           - { label: "Email",     name: "email",    widget: "string" }
           - { label: "Twitter",   name: "twitter",  widget: "string", required: false }
           - { label: "LinkedIn",  name: "linkedin", widget: "string", required: false }
@@ -83,7 +77,6 @@ collections:
           - { label: "Address",   name: "address",  widget: "text",    required: false }
           - { label: "UoG URL",   name: "uofg",     widget: "string", required: false }
 
-  # NEWS
   - name: "news"
     label: "News"
     folder: "_news"
@@ -96,7 +89,6 @@ collections:
       - { label: "Related Posts?", name: "related_posts", widget: "boolean" }
       - { label: "Body",           name: "body",          widget: "markdown" }
 
-  # PARTNERS
   - name: "partners"
     label: "Partners"
     folder: "_partners"
