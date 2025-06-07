@@ -1,7 +1,7 @@
 # ── admin/config.yml ──
 
 backend:
-  name: github
+  name: git-gateway
   repo: GDSGlasgow/GDSGlasgow.github.io
   branch: dev-pg
   identity_url: https://auth.decapbridge.com/sites/68a9faf2-f948-4c16-8c0c-f60c660937c1
