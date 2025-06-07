@@ -19,8 +19,8 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     # Uploads saved alongside each post .md file
-    media_folder: ""
-    public_folder: ""
+    media_folder: "assets/img"
+    public_folder: "/assets/img"
     fields:
       - { label: "Layout",        name: "layout",        widget: "hidden",  default: "post" }
       - { label: "Title",         name: "title",         widget: "string" }
@@ -93,8 +93,8 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     # If news uploads are rare, save alongside entry
-    media_folder: ""
-    public_folder: ""
+    media_folder: "assets/img"
+    public_folder: "/assets/img"
     fields:
       - { label: "Layout",         name: "layout",        widget: "hidden", default: "post" }
       - { label: "Date",           name: "date",          widget: "datetime" }
