@@ -4,30 +4,29 @@ inline: false
 group: alumni
 group_rank: 3
 weight: 3
-
 title: Dr. Jeremiah J. Nieves
-description: Research Software Engineer and Data Scientist
 lastname: Nieves
-publications: 'author^=*Nieves'
-
+description: Research Software Engineer and Data Scientist
+publications: author^=*Nieves
 teaser: >
-    Jeremiah currently leads the Geospatial Data Science Technology and Infrastructure sub-group while also designing and implementing secure and efficient data pipelines/mobile applications/workflows for research analyses and data collection.
-
-
+  Jeremiah currently leads the Geospatial Data Science Technology and
+  Infrastructure sub-group while also designing and implementing secure and
+  efficient data pipelines/mobile applications/workflows for research analyses
+  and data collection.
 profile:
-    name: Jeremiah J. Nieves
-    position: Research Software Engineer and Data Scientist
-    align: right
-    image: jeremiah.jpg
-    email: Jeremiah.Nieves@glasgow.ac.uk
-    twitter:
-    linkedin: jeremiahnieves
-    orcid: 0000-0002-7423-1341
-    github: jjniev01
-    address:
-    researchgate: Jeremiah-Nieves
-    uofg: /schools/ges/staff/jeremiahnieves/
-    googlescholar: ueAm63IAAAAJ&hl
+  github: jjniev01
+  align: right
+  researchgate: Jeremiah-Nieves
+  position: Research Software Engineer and Data Scientist
+  name: Jeremiah J. Nieves
+  googlescholar: ueAm63IAAAAJ&hl
+  twitter: null
+  address: null
+  uofg: ""
+  image: jeremiah.jpg
+  orcid: 0000-0002-7423-1341
+  email: Jeremiah.Nieves@glasgow.ac.uk
+  linkedin: jeremiahnieves
 ---
 <br>
 
