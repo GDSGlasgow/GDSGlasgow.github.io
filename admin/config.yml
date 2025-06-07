@@ -11,8 +11,6 @@ site_url: https://gdsglasgow.github.io
 # Expose all assets for browsing
 media_folder: "assets"
 public_folder: "/assets"
-media_library:
-  name: "decap-bridge"
 
 collections:
   - name: "posts"
