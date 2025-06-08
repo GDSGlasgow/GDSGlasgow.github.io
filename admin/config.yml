@@ -5,7 +5,8 @@ backend:
   repo: GDSGlasgow/GDSGlasgow.github.io
   branch: dev-pg
   auth_scope: repo
-  client_id: Ov23liniErM2fNTZXHQM
+  base_url: sveltia-cms-auth-gdsg.pietgerrits90.workers.dev
+  # client_id: Ov23liniErM2fNTZXHQM
 
 #     # Optional: Improved commit messages
 #   commit_messages:
