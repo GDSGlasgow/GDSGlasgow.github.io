@@ -19,7 +19,7 @@ icon: logos/favicon.ico  # the emoji used as the favicon (alternatively, provide
 # _config.yml  (anywhere near the other site-wide keys)
 
 logo:
-  path: /assets/img/logos/icon.svg   # leading slash, points into your repo
+  path: /assets/img/logos/uni-gdsg-combined.png   # leading slash, points into your repo
   width: 180px                          # display dimensions
   height: 45px
 
