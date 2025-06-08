@@ -5,12 +5,14 @@ on:
     branches:
       - master
       - main
-      - dev-pg-decapcms      # ← add this line
+      - dev-pg-decapcms
+      - dev-pg-sveltiacms
   pull_request:
     branches:
       - master
       - main
-      - dev-pg-decapcms      # ← add this line
+      - dev-pg-decapcms
+      - dev-pg-sveltiacms
   workflow_dispatch:
 
 permissions:
