@@ -18,11 +18,6 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: logos/favicon.ico  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 # _config.yml  (anywhere near the other site-wide keys)
 
-logo:
-  path: /assets/img/logos/uni-gdsg-combined.png   # leading slash, points into your repo
-  width: 180px                          # display dimensions
-  height: 45px
-
 url: https://GDSGlasgow.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
