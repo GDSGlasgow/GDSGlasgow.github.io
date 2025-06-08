@@ -1,11 +1,21 @@
 # ── admin/config.yml ──
 
+
 backend:
   name: github
   repo: GDSGlasgow/GDSGlasgow.github.io
   branch: dev-pg
   auth_scope: repo
-  base_url: sveltia-cms-auth-gdsg.pietgerrits90.workers.dev
+  client_id: Ov23liniErM2fNTZXHQM
+  base_url: https://sveltia-cms-auth-gdsg.pietgerrits90.workers.dev
+
+
+# backend:
+#   name: github
+#   repo: GDSGlasgow/GDSGlasgow.github.io
+#   branch: dev-pg
+#   auth_scope: repo
+#   base_url: sveltia-cms-auth-gdsg.pietgerrits90.workers.dev
   # client_id: Ov23liniErM2fNTZXHQM
 
 #     # Optional: Improved commit messages
@@ -22,112 +32,112 @@ backend:
 # site_url: https://gdsglasgow.github.io
 
 # ────────────────────────────────────────
-# Global media settings
-media_folder: "assets/img"
-public_folder: "/assets/img"
+# # Global media settings
+# media_folder: "assets/img"
+# public_folder: "/assets/img"
 
-# ────────────────────────────────────────
-collections:
+# # ────────────────────────────────────────
+# collections:
 
-  # POSTS: uploads go next to each .md
-  - name: "posts"
-    label: "Blog Posts"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    media_folder: ""
-    public_folder: ""
-    fields:
-      - { label: "Layout",    name: "layout",    widget: "hidden", default: "post" }
-      - { label: "Title",     name: "title",     widget: "string" }
-      - { label: "Date",      name: "date",      widget: "datetime" }
-      - { label: "Author",    name: "author",    widget: "string" }
-      - { label: "Description", name: "description", widget: "text", required: false }
-      - { label: "Tags",      name: "tags",      widget: "list" }
-      - { label: "Categories",name: "categories",widget: "list" }
-      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false }
-      - { label: "Body",      name: "body",      widget: "markdown" }
+#   # POSTS: uploads go next to each .md
+#   - name: "posts"
+#     label: "Blog Posts"
+#     folder: "_posts"
+#     create: true
+#     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+#     media_folder: ""
+#     public_folder: ""
+#     fields:
+#       - { label: "Layout",    name: "layout",    widget: "hidden", default: "post" }
+#       - { label: "Title",     name: "title",     widget: "string" }
+#       - { label: "Date",      name: "date",      widget: "datetime" }
+#       - { label: "Author",    name: "author",    widget: "string" }
+#       - { label: "Description", name: "description", widget: "text", required: false }
+#       - { label: "Tags",      name: "tags",      widget: "list" }
+#       - { label: "Categories",name: "categories",widget: "list" }
+#       - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false }
+#       - { label: "Body",      name: "body",      widget: "markdown" }
 
-  # PROJECTS: shared folder for project images
-  - name: "projects"
-    label: "Projects"
-    folder: "_projects"
-    create: true
-    slug: "{{slug}}"
-    media_folder: "assets/img/project_images"
-    public_folder: "/assets/img/project_images"
-    fields:
-      - { label: "Layout",    name: "layout",              widget: "hidden", default: "page" }
-      - { label: "Title",     name: "title",               widget: "string" }
-      - { label: "Description", name: "description",      widget: "text",    required: false }
-      - { label: "Image",     name: "img",                 widget: "image" }
-      - { label: "Importance",name: "importance",          widget: "number",  min: 1, max: 5 }
-      - { label: "Category",  name: "category",            widget: "string" }
-      - { label: "Related Publications", name: "related_publications", widget: "string", required: false }
-      - { label: "Body",      name: "body",                widget: "markdown" }
+#   # PROJECTS: shared folder for project images
+#   - name: "projects"
+#     label: "Projects"
+#     folder: "_projects"
+#     create: true
+#     slug: "{{slug}}"
+#     media_folder: "assets/img/project_images"
+#     public_folder: "/assets/img/project_images"
+#     fields:
+#       - { label: "Layout",    name: "layout",              widget: "hidden", default: "page" }
+#       - { label: "Title",     name: "title",               widget: "string" }
+#       - { label: "Description", name: "description",      widget: "text",    required: false }
+#       - { label: "Image",     name: "img",                 widget: "image" }
+#       - { label: "Importance",name: "importance",          widget: "number",  min: 1, max: 5 }
+#       - { label: "Category",  name: "category",            widget: "string" }
+#       - { label: "Related Publications", name: "related_publications", widget: "string", required: false }
+#       - { label: "Body",      name: "body",                widget: "markdown" }
 
-  # TEAM: shared folder for profile images
-  - name: "team"
-    label: "Team Members"
-    folder: "_team"
-    create: true
-    slug: "{{slug}}"
-    media_folder: "assets/img/team_profiles"
-    public_folder: "/assets/img/team_profiles"
-    fields:
-      - { label: "Layout",   name: "layout",     widget: "hidden", default: "team" }
-      - { label: "Inline?",  name: "inline",     widget: "boolean" }
-      - { label: "Group",    name: "group",      widget: "string" }
-      - { label: "Group Rank", name: "group_rank", widget: "number" }
-      - { label: "Weight",   name: "weight",     widget: "number" }
-      - { label: "Title",    name: "title",      widget: "string" }
-      - { label: "Last Name",name: "lastname",   widget: "string" }
-      - { label: "Description",name: "description", widget: "text" }
-      - { label: "Publications",name: "publications", widget: "string", required: false }
-      - { label: "Teaser",   name: "teaser",     widget: "markdown" }
-      - label: "Profile"
-        name: "profile"
-        widget: "object"
-        fields:
-          - { label: "Name",     name: "name",     widget: "string" }
-          - { label: "Position", name: "position", widget: "string" }
-          - { label: "Align",    name: "align",    widget: "select", options: ["left","right"] }
-          - { label: "Image",    name: "image",    widget: "image" }
-          - { label: "Email",    name: "email",    widget: "string" }
-          - { label: "Twitter",  name: "twitter",  widget: "string", required: false }
-          - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
-          - { label: "ORCID",    name: "orcid",    widget: "string", required: false }
-          - { label: "Address",  name: "address",  widget: "text",    required: false }
-          - { label: "UoG URL",  name: "uofg",     widget: "string", required: false }
+#   # TEAM: shared folder for profile images
+#   - name: "team"
+#     label: "Team Members"
+#     folder: "_team"
+#     create: true
+#     slug: "{{slug}}"
+#     media_folder: "assets/img/team_profiles"
+#     public_folder: "/assets/img/team_profiles"
+#     fields:
+#       - { label: "Layout",   name: "layout",     widget: "hidden", default: "team" }
+#       - { label: "Inline?",  name: "inline",     widget: "boolean" }
+#       - { label: "Group",    name: "group",      widget: "string" }
+#       - { label: "Group Rank", name: "group_rank", widget: "number" }
+#       - { label: "Weight",   name: "weight",     widget: "number" }
+#       - { label: "Title",    name: "title",      widget: "string" }
+#       - { label: "Last Name",name: "lastname",   widget: "string" }
+#       - { label: "Description",name: "description", widget: "text" }
+#       - { label: "Publications",name: "publications", widget: "string", required: false }
+#       - { label: "Teaser",   name: "teaser",     widget: "markdown" }
+#       - label: "Profile"
+#         name: "profile"
+#         widget: "object"
+#         fields:
+#           - { label: "Name",     name: "name",     widget: "string" }
+#           - { label: "Position", name: "position", widget: "string" }
+#           - { label: "Align",    name: "align",    widget: "select", options: ["left","right"] }
+#           - { label: "Image",    name: "image",    widget: "image" }
+#           - { label: "Email",    name: "email",    widget: "string" }
+#           - { label: "Twitter",  name: "twitter",  widget: "string", required: false }
+#           - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+#           - { label: "ORCID",    name: "orcid",    widget: "string", required: false }
+#           - { label: "Address",  name: "address",  widget: "text",    required: false }
+#           - { label: "UoG URL",  name: "uofg",     widget: "string", required: false }
 
-  # NEWS: uploads next to each news .md
-  - name: "news"
-    label: "News"
-    folder: "_news"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    media_folder: ""
-    public_folder: ""
-    fields:
-      - { label: "Layout",         name: "layout",        widget: "hidden", default: "post" }
-      - { label: "Date",           name: "date",          widget: "datetime" }
-      - { label: "Inline?",        name: "inline",        widget: "boolean" }
-      - { label: "Related Posts?", name: "related_posts", widget: "boolean" }
-      - { label: "Body",           name: "body",          widget: "markdown" }
+#   # NEWS: uploads next to each news .md
+#   - name: "news"
+#     label: "News"
+#     folder: "_news"
+#     create: true
+#     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+#     media_folder: ""
+#     public_folder: ""
+#     fields:
+#       - { label: "Layout",         name: "layout",        widget: "hidden", default: "post" }
+#       - { label: "Date",           name: "date",          widget: "datetime" }
+#       - { label: "Inline?",        name: "inline",        widget: "boolean" }
+#       - { label: "Related Posts?", name: "related_posts", widget: "boolean" }
+#       - { label: "Body",           name: "body",          widget: "markdown" }
 
-  # PARTNERS: shared partner logos
-  - name: "partners"
-    label: "Partners"
-    folder: "_partners"
-    create: true
-    slug: "{{slug}}"
-    media_folder: "assets/img/partners"
-    public_folder: "/assets/img/partners"
-    fields:
-      - { label: "Layout",      name: "layout",     widget: "hidden", default: "page" }
-      - { label: "Title",       name: "title",      widget: "string" }
-      - { label: "Description", name: "description", widget: "text",   required: false }
-      - { label: "Logo/Image",  name: "img",         widget: "image" }
-      - { label: "Redirect URL",name: "redirect",    widget: "string", required: false }
-      - { label: "Importance",   name: "importance",  widget: "number", min: 1, max: 5 }
-      - { label: "Category",     name: "category",    widget: "string", required: false }
+#   # PARTNERS: shared partner logos
+#   - name: "partners"
+#     label: "Partners"
+#     folder: "_partners"
+#     create: true
+#     slug: "{{slug}}"
+#     media_folder: "assets/img/partners"
+#     public_folder: "/assets/img/partners"
+#     fields:
+#       - { label: "Layout",      name: "layout",     widget: "hidden", default: "page" }
+#       - { label: "Title",       name: "title",      widget: "string" }
+#       - { label: "Description", name: "description", widget: "text",   required: false }
+#       - { label: "Logo/Image",  name: "img",         widget: "image" }
+#       - { label: "Redirect URL",name: "redirect",    widget: "string", required: false }
+#       - { label: "Importance",   name: "importance",  widget: "number", min: 1, max: 5 }
+#       - { label: "Category",     name: "category",    widget: "string", required: false }
