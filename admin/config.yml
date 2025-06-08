@@ -93,6 +93,8 @@ collections:
           - { label: ORCID,    name: orcid,    widget: string, required: false }
           - { label: Address,  name: address,  widget: text,   required: false }
           - { label: UoG URL,  name: uofg,     widget: string, required: false }
+      # ⬇️  NEW — the long biography section
+      - { label: Body, name: body, widget: markdown }
 
 # ─────────────────────────── NEWS ──────────────────────────
   - name: news
