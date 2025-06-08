@@ -5,7 +5,7 @@ backend:
   repo: GDSGlasgow/GDSGlasgow.github.io
   branch: dev-pg
   auth_scope: repo
-  client_id: Ov23liniErM2fNTZXHQM
+  # client_id: Ov23liniErM2fNTZXHQM
 
 #     # Optional: Improved commit messages
 #   commit_messages:
