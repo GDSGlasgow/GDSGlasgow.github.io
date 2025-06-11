@@ -7,6 +7,8 @@ importance: 2
 category: Community projects where we contribute
 related_publications: ''
 ---
-MapAction is a non-governmental organisation that specialises in providing mapping for humanitarian emergencies.
+![MapAction](/assets/img/project_images/mapaction.png)
+
+MapAction is a non-governmentarian emergency.
 
 For more information, please visit: [https://mapaction.org/](https://mapaction.org/)
