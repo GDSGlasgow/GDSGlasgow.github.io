@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MapAction
-description: MapAction is a non-governmental organisation that specialises in providing mapping for humanitarian emergencies.
+description: ''
 img: /assets/img/project_images/mapaction.png
 importance: 2
 category: Community projects where we contribute
