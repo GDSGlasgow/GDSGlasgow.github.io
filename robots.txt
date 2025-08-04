@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://GDSGlasgow.github.io/GDSGlasgow.github.io/sitemap.xml
