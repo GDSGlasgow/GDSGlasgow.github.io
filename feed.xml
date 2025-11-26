@@ -3,14 +3,14 @@
     <title>Geospatial Data Science Group - UofG </title>
     <link href="https://gdsglasgow.github.io/feed.xml" rel="self" />
     <link href="https://gdsglasgow.github.io" />
-    <updated>2025-08-01T13:05:26+01:00</updated>
+    <updated>2025-11-26T11:41:46+00:00</updated>
     <author>
         <name>Piet Gerrits</name>
     </author>
     <id>https://gdsglasgow.github.io</id>
 
     <entry>
-        <title>Quarterly Newsletter - July 2025</title>
+        <title>Summer Newsletter - July 2025</title>
         <author>
             <name>Ndali Liita Cairney</name>
         </author>
@@ -21,14 +21,14 @@
             <category term="Current Projects"/>
 
         <updated>2025-07-17T10:45:41+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Geospatial Data Science Group Quarterly Newsletter - June 2025 School of Geographical &amp; Earth Sciences | University of Glasgow Q2&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+                <div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="3">
 <figure class="gallery__item"><a href="https://gdsglasgow.github.io/media/posts/44/gallery/1745569981107.jpg" data-size="1279x1705"><img loading="lazy" src="https://gdsglasgow.github.io/media/posts/44/gallery/1745569981107-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
 <figure class="gallery__item"><a href="https://gdsglasgow.github.io/media/posts/44/gallery/Ana.jpg" data-size="1536x1536"><img loading="lazy" src="https://gdsglasgow.github.io/media/posts/44/gallery/Ana-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
 <figure class="gallery__item"><a href="https://gdsglasgow.github.io/media/posts/44/gallery/james.jpg" data-size="2047x1153"><img loading="lazy" src="https://gdsglasgow.github.io/media/posts/44/gallery/james-thumbnail.jpg" alt="" width="720" height="406"></a></figure>
@@ -53,7 +53,7 @@
 <p>🗓️ <strong>Upcoming Events</strong><br>•    <a href="https://www.gla.ac.uk/research/az/datascience/events/festival/" target="_blank" rel="noopener noreferrer">Festival of Data Science &amp; AI</a> hosted by the Centre for Data Science and AI<br>University of Glasgow<em> | </em> Advanced Research Centre (ARC)<em> | </em> 27-29 October, 2025</p>
 <hr>
 <p>📨 Stay Connected<br>🌐 <a href="https://gdsglasgow.github.io/" target="_blank" rel="noopener noreferrer">Website</a><br>🔗<a href="https://www.linkedin.com/company/university-of-glasgow-geospatial-data-science-group?trk=public_post_follow-view-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a><br>🐦 <a href="https://x.com/GSDSglasgow" target="_blank" rel="noopener noreferrer">Twitter/X</a><br>📢 Forward this newsletter to colleagues or collaborators who may be interested!</p>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="true" data-translation="Add images"> </div></div>
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="true" data-translation="Add images"> </div></div>
             ]]>
         </content>
     </entry>
