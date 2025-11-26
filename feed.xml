@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-    <title>Geospatial Data Science Group - UofG </title>
+    <title>Univeristy of Glasgow Geospatial Data Science Group</title>
     <link href="https://gdsglasgow.github.io/feed.xml" rel="self" />
     <link href="https://gdsglasgow.github.io" />
     <updated>2025-11-26T11:41:46+00:00</updated>
